@@ -38,3 +38,15 @@ arreglo.forEach((item, index)=>{
     console.log("foreach: ",item)
     console.log("foreach: ",index)
 })
+
+
+console.log("/////////////////////////////////////")
+// el .map funciona muy parecido al foreach, hasta cierto punto funcionan exactamente de la misma manera, ya que ambos recorren un array de principio a fin, ambos DEBEN recibir de 1 a 3 parametros y cada parametro representa lo mismo tanto en foreach como en map, la diferencia radica en que el .map suele usarse para crear un nuevo arreglo a partir de los valores que este retorna con LA PALABRA RESERVADA return, es decir que cada posicion del nuevo arreglo tendra lo que diga el return
+
+const nuevo_arreglo= arreglo.map((item, index)=>{
+    console.log("map: ",item)
+    console.log("map: ",index)
+    return item+" holi"
+})
+console.log("estge es el arreglo viejo: ", arreglo)
+console.log("este es el arreglo nuevo: ", nuevo_arreglo)
